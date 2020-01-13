@@ -14,9 +14,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><h2><img src="~/imgs/profilepic.png" class="mainimg" /></h2></a>
+        <nav class="navbar navbar-expand-lg navbar-toggleable-sm">
+            <div class="container justify-content-center">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><h2><img src="~/imgs/logo2.png" class="mainimg" /></h2></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,25 +24,27 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <h1><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="About">About</a></h1>
+                            <h1><a class="nav-link text-secondary" asp-area="" asp-controller="Home" asp-action="About">About</a></h1>
                         </li>
                         <li class="nav-item">
-                            <h1><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Portfolio">Portfolio</a></h1>
+                            <h1><a class="nav-link text-secondary" asp-area="" asp-controller="Home" asp-action="Portfolio">Portfolio</a></h1>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div >
+        <main role="main" class="">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-            <div class="container padding">
-                <div class="row">
+    <footer class="footer">
+            <div >
+                <div class="row text-center"><div class="mx-auto"><h1 class="contact text-dark">Contact Me:</h1></div></div>
+   
+                <div class="row  footerwrapper ">
                     <div class="mx-auto">
                         <span>
                             <a href="mailto:josephharburg@gmail.com" target="_blank">
@@ -69,7 +71,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

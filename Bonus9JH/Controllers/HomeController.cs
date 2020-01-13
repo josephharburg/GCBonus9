@@ -23,6 +23,11 @@ namespace Bonus9JH.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            return View();
+        }
+
         public IActionResult Portfolio()
         {
             return View();
